@@ -119,7 +119,10 @@ We build internal operating systems that help technical teams move faster. Tooli
 
 ## Open Source
 
-Public repositories are on the way — AI toolkit and Jira MCP server are first in line. **SOON**
+| Repository | Description | Status |
+|------------|-------------|--------|
+| [ai-toolkit](https://github.com/softspark/ai-toolkit) | Claude Code toolkit — skills, agents, hooks, and knowledge base integration | **PUBLIC** |
+| jira-mcp-server | MCP server for Jira integration | SOON |
 
 ---
 

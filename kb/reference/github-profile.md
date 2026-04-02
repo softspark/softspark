@@ -29,7 +29,7 @@ softspark/
 6. **Engineering Protocol — How We Work** — 5-step operating model (Diagnose → Design → Codify → Ship → Transfer)
 7. **Working Style** — principles + "Typical Outputs" deliverables table
 8. **Selected Building Blocks** — shields.io `for-the-badge` tech row (Docker, Terraform, Ansible, AWS, Hetzner, PHP, Python, Node.js, TypeScript, Magento, PostgreSQL, GitLab CI)
-9. **Open Source** — placeholder with **SOON** label until repos go public (AI toolkit and Jira MCP server first in line)
+9. **Open Source** — table with public repos ([ai-toolkit](https://github.com/softspark/ai-toolkit) live) and upcoming (Jira MCP server)
 10. **Footer** — website and email links
 
 ## How to Update
