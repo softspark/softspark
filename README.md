@@ -122,7 +122,7 @@ We build internal operating systems that help technical teams move faster. Tooli
 | Repository | Description | Status |
 |------------|-------------|--------|
 | [ai-toolkit](https://github.com/softspark/ai-toolkit) | Claude Code toolkit — skills, agents, hooks, and knowledge base integration | **PUBLIC** |
-| jira-mcp-server | MCP server for Jira integration | SOON |
+| [jira-mcp](https://github.com/softspark/jira-mcp) | MCP server for Jira integration — multi-instance, caching, bulk operations | **PUBLIC** |
 
 ---
 
