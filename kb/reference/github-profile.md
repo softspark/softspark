@@ -29,8 +29,9 @@ softspark/
 6. **Engineering Protocol — How We Work** — 5-step operating model (Diagnose → Design → Codify → Ship → Transfer)
 7. **Working Style** — principles + "Typical Outputs" deliverables table
 8. **Selected Building Blocks** — shields.io `for-the-badge` tech row (Docker, Terraform, Ansible, AWS, Hetzner, PHP, Python, Node.js, TypeScript, Magento, PostgreSQL, GitLab CI)
-9. **Open Source** — table with public repos ([ai-toolkit](https://github.com/softspark/ai-toolkit), [jira-mcp](https://github.com/softspark/jira-mcp))
-10. **Footer** — website and email links
+9. **Open Source** — table with public repos, their licence and status ([ai-toolkit](https://github.com/softspark/ai-toolkit), [jira-mcp](https://github.com/softspark/jira-mcp)); both Apache-2.0 since 2026-07-27
+10. **Footer** — website and email links, plus the profile's own licence
+    (Apache-2.0) and a note that linked repositories carry their own
 
 ## How to Update
 
@@ -39,8 +40,13 @@ softspark/
 Uncomment the table in the "Open Source" section and add a row:
 
 ```markdown
-| [repo-name](https://github.com/softspark/repo-name) | Short description |
+| [repo-name](https://github.com/softspark/repo-name) | Short description | Apache-2.0 | **PUBLIC** |
 ```
+
+State the licence as its SPDX identifier, matching what GitHub detects for the
+repository — a visitor reading the profile should not have to open the repo to
+learn the terms. SoftSpark open-source modules are Apache-2.0; if a row ever
+carries something else, that is a deliberate exception and worth a note here.
 
 ### Adding a tech badge
 
@@ -51,6 +57,19 @@ Add to the badge row:
 ```
 
 Find logo slugs at [simple-icons.github.io/simple-icons](https://simple-icons.github.io/simple-icons/).
+
+## Licence
+
+`LICENSE` (Apache-2.0) and `NOTICE` cover this repository's own content:
+`README.md`, this note, and the agent instructions. Apache-2.0 was chosen for
+consistency with the other SoftSpark open-source repositories rather than
+because the content is software — it is a copyright licence and applies to any
+work of authorship. Section 6 reserves the SoftSpark name and marks, which is
+the clause that matters most for a profile.
+
+Linked repositories are licensed separately. Do not assume this LICENSE governs
+them, and keep the `License` column in the Open Source table matching what
+GitHub detects for each one.
 
 ## Related
 

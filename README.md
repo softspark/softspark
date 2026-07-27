@@ -119,11 +119,13 @@ We build internal operating systems that help technical teams move faster. Tooli
 
 ## Open Source
 
-| Repository | Description | Status |
-|------------|-------------|--------|
-| [ai-toolkit](https://github.com/softspark/ai-toolkit) | Claude Code toolkit — skills, agents, hooks, and knowledge base integration | **PUBLIC** |
-| [jira-mcp](https://github.com/softspark/jira-mcp) | MCP server for Jira integration — multi-instance, caching, bulk operations | **PUBLIC** |
+| Repository | Description | License | Status |
+|------------|-------------|---------|--------|
+| [ai-toolkit](https://github.com/softspark/ai-toolkit) | Claude Code toolkit — skills, agents, hooks, and knowledge base integration | Apache-2.0 | **PUBLIC** |
+| [jira-mcp](https://github.com/softspark/jira-mcp) | MCP server for Jira integration — multi-instance, caching, bulk operations | Apache-2.0 | **PUBLIC** |
 
 ---
 
 [softspark.eu](https://softspark.eu) · [biuro@softspark.eu](mailto:biuro@softspark.eu)
+
+This profile is licensed under [Apache-2.0](LICENSE); see [NOTICE](NOTICE). Linked repositories carry their own licences.

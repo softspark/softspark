@@ -1,0 +1,36 @@
+SoftSpark profile
+Copyright 2024-2026 Lukasz Krzemien (biuro@softspark.eu)
+
+Source: https://github.com/softspark/softspark
+
+Licensed under the Apache License, Version 2.0 (the "License");
+you may not use this file except in compliance with the License.
+You may obtain a copy of the License at
+
+    http://www.apache.org/licenses/LICENSE-2.0
+
+Unless required by applicable law or agreed to in writing, software
+distributed under the License is distributed on an "AS IS" BASIS,
+WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+See the License for the specific language governing permissions and
+limitations under the License.
+
+If you redistribute this work or a derivative of it, Section 4(d) of the
+License requires you to carry the contents of this NOTICE file with it.
+
+--------------------------------------------------------------------------------
+
+SCOPE
+
+This repository holds the SoftSpark GitHub profile: `README.md`, the reference
+note describing how it is structured, and the agent instructions used to edit
+it. Apache-2.0 is used for consistency with the other SoftSpark open-source
+repositories rather than because the content is software; it is a copyright
+licence and applies to any work of authorship.
+
+Section 6 reserves the "SoftSpark" name and marks. The licence permits copying
+and adapting this text; it grants no right to present yourself as SoftSpark or
+to use the company name or branding as an endorsement.
+
+Links out of this profile point to separately licensed repositories. Each is
+governed by its own LICENSE and NOTICE, not by this one.
