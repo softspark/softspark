@@ -5,3 +5,10 @@
 /.aider.conf.yml
 /.clinerules
 /.roomodes
+/.github/agents/
+/.github/hooks/
+/.github/instructions/
+/.github/prompts/
+/.github/skills/
+/.github/copilot-instructions.md
+/AGENTS.md
