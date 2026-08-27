@@ -1,77 +1,104 @@
-# GitHub Profile Page — softspark/softspark
+---
+title: "SoftSpark GitHub Profile Page"
+category: reference
+service: softspark
+tags: [github-profile, company, founder, open-source, public-content]
+created: "2026-07-27"
+last_updated: "2026-08-27"
+description: "Defines the content, evidence sources, and update procedure for the public softspark/softspark GitHub profile."
+version: "1.1.0"
+---
 
-## What This Is
+# SoftSpark GitHub Profile Page
 
-Special GitHub repository whose `README.md` renders as the public profile at [github.com/softspark](https://github.com/softspark). This is a **personal account** profile (not an organization).
+## Purpose
 
-## How It Works
+The `softspark/softspark` repository is the public profile rendered at [github.com/softspark](https://github.com/softspark). The account is a personal GitHub account, not an organization.
 
-- Repo name matches the account name (`softspark/softspark`) — GitHub treats it as a profile repo
-- `README.md` at the repo root is displayed on the profile page
-- Supports full GitHub Flavored Markdown + limited HTML (`<p align>`, `<details>`, `<img>`, `<picture>`)
+The page explains two connected subjects:
 
-## Current Structure
+- **SoftSpark as a company:** commerce engineering, infrastructure delivery, AI systems, operational enablement, and public modules.
+- **Łukasz Krzemień as the founder:** hands-on ownership of architecture, implementation, delivery, and production operations.
 
-```
+The README must keep those subjects distinct. SoftSpark describes the delivery capability and public systems. The Founder section explains who performs and owns the engineering work.
+
+## Repository Structure
+
+```text
 softspark/
-  README.md      # Profile page content
-  .gitignore     # .idea/, .DS_Store
-  kb/            # Knowledge base for RAG indexing
+  README.md
+  LICENSE
+  NOTICE
+  AGENTS.md
+  kb/reference/github-profile.md
 ```
 
-## Content Sections
+`README.md` is the public page. This document records its content contract and verification sources.
 
-1. **Header** — concise value proposition (12+ years tagline)
-2. **Infrastructure — The System Behind the Revenue** — provisioning, automation, delivery stack table; 99.95% stability target
-3. **Our Approach** — "What defines our work" and "What We Help Teams Fix" tables
-4. **E-Commerce — Revenue Engine** — checkout, search/cache, PIM/data flow, ops coverage
-5. **AI Delivery — AI Orchestration** — toolkits, knowledge (RAG), MCP, orchestration, SDK layers table
-6. **Engineering Protocol — How We Work** — 5-step operating model (Diagnose → Design → Codify → Ship → Transfer)
-7. **Working Style** — principles + "Typical Outputs" deliverables table
-8. **Selected Building Blocks** — shields.io `for-the-badge` tech row (Docker, Terraform, Ansible, AWS, Hetzner, PHP, Python, Node.js, TypeScript, Magento, PostgreSQL, GitLab CI)
-9. **Open Source** — table with public repos, their licence and status ([ai-toolkit](https://github.com/softspark/ai-toolkit), [jira-mcp](https://github.com/softspark/jira-mcp)); both Apache-2.0 since 2026-07-27
-10. **Footer** — website and email links, plus the profile's own licence
-    (Apache-2.0) and a note that linked repositories carry their own
+## Content Contract
 
-## How to Update
+The profile contains these sections in order:
 
-### Adding a public repository
+1. **Header:** company scope, 12+ years of operator experience, website, and contact address.
+2. **Founder:** Łukasz Krzemień, his hands-on engineering role, and the domains he works across.
+3. **What We Build:** commerce platforms, infrastructure and delivery, AI delivery systems, and operational enablement.
+4. **Commerce Engineering:** platform work, performance, product data, and operations.
+5. **Infrastructure and Delivery:** provisioning, automation, CI/CD, observability, recovery, and the 99.95% stability target.
+6. **AI Delivery:** ai-toolkit, jira-mcp, retrieval systems, dsh-codex, dsh-orchestrator, and control-plane guardrails.
+7. **How We Work:** Diagnose, Design, Codify, Ship, Transfer.
+8. **Typical Engagements:** concrete production and engineering-system work.
+9. **Open Source:** four public Apache-2.0 modules with dynamic npm version badges.
+10. **Selected Building Blocks:** technology badges relevant to the described work.
+11. **Contact and License:** website, email, Apache-2.0, NOTICE, and linked-repository license boundary.
 
-Uncomment the table in the "Open Source" section and add a row:
+## Public Module Inventory
 
-```markdown
-| [repo-name](https://github.com/softspark/repo-name) | Short description | Apache-2.0 | **PUBLIC** |
+The Open Source table mirrors the current non-fork public repositories with a product surface:
+
+| Repository | Distribution | Role |
+|---|---|---|
+| `softspark/ai-toolkit` | `@softspark/ai-toolkit` | Shared AI engineering toolkit for 12 developer-tool integrations |
+| `softspark/jira-mcp` | `@softspark/jira-mcp` | Multi-instance Jira MCP server |
+| `softspark/dsh-codex` | `@softspark/dsh-codex` | DeepSeek Harness Codex provider using local ChatGPT authentication |
+| `softspark/dsh-orchestrator` | `@softspark/dsh-orchestrator` | DeepSeek Harness delegation bundle for Claude Code and Copilot Gemini |
+
+All four repositories use Apache-2.0 and `NOTICE`. npm badges resolve the current registry version dynamically, so the profile does not copy version numbers into prose.
+
+## Evidence Sources
+
+Use current public metadata before changing claims:
+
+```bash
+gh repo list softspark --visibility public --limit 100 \
+  --json name,description,url,licenseInfo,isArchived,isFork,repositoryTopics
+
+npm view @softspark/ai-toolkit version description --json
+npm view @softspark/jira-mcp version description --json
+npm view @softspark/dsh-codex version description --json
+npm view @softspark/dsh-orchestrator version description --json
 ```
 
-State the licence as its SPDX identifier, matching what GitHub detects for the
-repository — a visitor reading the profile should not have to open the repo to
-learn the terms. SoftSpark open-source modules are Apache-2.0; if a row ever
-carries something else, that is a deliberate exception and worth a note here.
+Do not list a private, archived, unlicensed, or placeholder repository. Do not copy claims from a local branch when the public repository or registry says something different.
 
-### Adding a tech badge
+## Update Procedure
 
-Add to the badge row:
+1. Retrieve current GitHub and npm metadata using the commands above.
+2. Update `README.md` and this reference in the same commit.
+3. Keep the company description, Founder section, public module table, and contact details consistent.
+4. Remove promotional adjectives that are not supported by a number, named capability, or public artifact.
+5. Validate Markdown structure, links, licensing, and banned brand-voice patterns.
+6. Review the rendered README on GitHub after push.
 
-```html
-<img src="https://img.shields.io/badge/Name-COLOR?style=for-the-badge&logo=SLUG&logoColor=white" alt="Name">
+## Verification
+
+```bash
+git diff --check
+python3 -c "from pathlib import Path; text='\n'.join(Path(p).read_text() for p in ('README.md','kb/reference/github-profile.md')); banned=(chr(0x2013),chr(0x2014),'cutting'+'-edge','game'+'-changer','revolution'+'ary','seam'+'less','state-of-the-'+'art'); assert not [value for value in banned if value in text]"
+rg -n "dsh-codex|dsh-orchestrator|ai-toolkit|jira-mcp|Łukasz Krzemień" README.md kb/reference/github-profile.md
 ```
 
-Find logo slugs at [simple-icons.github.io/simple-icons](https://simple-icons.github.io/simple-icons/).
+The Python assertion must exit zero. The `rg` command must find every public module plus the Founder identity in both documentation surfaces where applicable.
 
-## Licence
+## License
 
-`LICENSE` (Apache-2.0) and `NOTICE` cover this repository's own content:
-`README.md`, this note, and the agent instructions. Apache-2.0 was chosen for
-consistency with the other SoftSpark open-source repositories rather than
-because the content is software — it is a copyright licence and applies to any
-work of authorship. Section 6 reserves the SoftSpark name and marks, which is
-the clause that matters most for a profile.
-
-Linked repositories are licensed separately. Do not assume this LICENSE governs
-them, and keep the `License` column in the Open Source table matching what
-GitHub detects for each one.
-
-## Related
-
-- **`.github` repo** (local, not yet pushed) — community health files: `CODE_OF_CONDUCT.md`, `CONTRIBUTING.md`, `SECURITY.md`, `profile/README.md`. The `profile/README.md` only renders if the account converts to an organization.
-- Remote: `git@softsparkrepo:softspark/softspark.git`
+`LICENSE` and `NOTICE` cover this repository's README, KB, and agent instructions. Linked repositories retain their own licenses. Keep the Open Source table aligned with the SPDX identifier GitHub detects for each project.

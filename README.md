@@ -1,104 +1,89 @@
 # SoftSpark
 
-> 12+ years of operator experience
+> Commerce infrastructure, production delivery, and AI systems for teams that cannot afford fragile operations.
 
-E-commerce infrastructure and AI delivery systems — founder-led, hands-on.
+SoftSpark is a founder-led engineering company with 12+ years of operator experience. We design, build, and stabilize revenue-critical platforms. Our work stays close to production: architecture, infrastructure, releases, observability, recovery, and engineering automation.
 
-We build and stabilize revenue-critical commerce systems for teams that need stronger delivery, cleaner infrastructure, and less operational chaos.
+[softspark.eu](https://softspark.eu) · [biuro@softspark.eu](mailto:biuro@softspark.eu)
 
----
+## Founder
 
-## Infrastructure — The System Behind the Revenue
+SoftSpark is built and led by **Łukasz Krzemień**, a software and infrastructure engineer who works directly on architecture, implementation, delivery, and production operations.
 
-We operate in the layer where uptime, release flow, observability, and platform decisions directly shape commercial outcomes.
+Łukasz combines commerce-platform experience with infrastructure automation and AI engineering. His work spans Magento and PHP systems, cloud and VPS infrastructure, CI/CD, observability, knowledge retrieval, MCP servers, coding-agent platforms, and multi-model orchestration.
 
-`Magento / PWA / Akeneo` · `Symfony / Pimcore` · `AWS / Azure / Hetzner` · `CI/CD / IaC / Containers`
+The operating principle is simple: important systems need explicit ownership, measurable acceptance criteria, repeatable delivery, and a tested recovery path.
 
-**99.95%** stability target across release-critical paths
+## What We Build
 
-| Area | Stack | Details |
-|------|-------|---------|
-| Provisioning | Terraform / Terragrunt | Hetzner Cloud, AWS, and hybrid VPS setups |
-| Automation | Containerized Ansible | Repeatable provisioning and server management |
-| Delivery | CI/CD with zero-downtime | Validation, rollback readiness, and zero-downtime release patterns |
+| Area | Scope | Typical stack |
+|---|---|---|
+| **Commerce platforms** | Catalog, checkout, search, cache, PIM, integrations, multi-store operations | Magento 2, PWA, Akeneo, Symfony, Pimcore |
+| **Infrastructure and delivery** | Provisioning, containers, CI/CD, observability, backup, recovery | Terraform, Terragrunt, Ansible, Docker, AWS, Azure, Hetzner |
+| **AI delivery systems** | Coding-agent rules, knowledge retrieval, MCP servers, model routing, multi-agent workflows | Claude Code, Codex, Copilot, Gemini, MCP, RAG, CRAG |
+| **Operational enablement** | SOPs, runbooks, architecture decisions, incident workflows, team tooling | GitHub Actions, GitLab CI, OpenTelemetry, Prometheus, Grafana |
 
-**Security** — Access, secrets, backups · **Recovery** — Rollback ready · **Observability** — Full-stack visibility
+## Commerce Engineering
 
----
+We work on the application paths where latency, deployment risk, and integration failures affect revenue.
 
-## Our Approach
+| Capability | Delivery scope |
+|---|---|
+| **Platform engineering** | Magento 2 B2C and B2B, headless storefronts, middleware, extensions, upgrade paths |
+| **Performance** | Varnish, OpenSearch, queues, cache policy, PHP runtime, database diagnostics |
+| **Product data** | Akeneo PIM, catalog normalization, feeds, imports, exports, synchronization |
+| **Operations** | Multi-store releases, monitoring, incident loops, rollback procedures, peak-readiness checks |
 
-| What defines our work | What that means in practice |
-|-----------------------|-----------------------------|
-| **Operator mindset** | We care about uptime, release safety, recovery, and delivery speed — not presentation theatre. |
-| **Automation first** | We replace tribal knowledge with Terraform, Ansible, Docker, CI/CD, runbooks, and repeatable workflows. |
-| **Commerce-native thinking** | We understand catalog, checkout, search, queues, cache layers, integrations, and peak traffic realities. |
-| **AI with guardrails** | We use AI where it shortens lead time and makes knowledge reusable, but keep humans in control of decisions. |
+## Infrastructure and Delivery
 
-### What We Help Teams Fix
+Our infrastructure work targets repeatable changes and recoverable failures. The stability target for release-critical paths is **99.95%**.
 
-- Releases that are too risky because the platform depends on heroics.
-- Infrastructure that grew fast but was never standardized.
-- Magento or PWA performance problems that leak revenue and slow product work.
-- Missing operational discipline: poor observability, weak rollback paths, undocumented flows.
-- AI experimentation without governance, traceability, or integration into real delivery work.
+| Layer | Implementation |
+|---|---|
+| **Provisioning** | Terraform and Terragrunt for Hetzner Cloud, AWS, Azure, and hybrid VPS environments |
+| **Automation** | Containerized Ansible, explicit inventories, idempotent playbooks, configuration ownership |
+| **Delivery** | CI/CD validation, zero-downtime deployment patterns, health checks, rollback gates |
+| **Operations** | Structured logs, metrics, tracing, backups, restore tests, capacity and cost reviews |
 
----
+## AI Delivery
 
-## E-Commerce — Revenue Engine
+We treat AI as an engineering system, not a chat window. Rules, permissions, retrieval, evaluation, and release gates remain explicit.
 
-We work directly in the application layer where performance and stability affect revenue — from catalog and checkout to search, cache, feeds, and multi-store operations.
+| Layer | SoftSpark implementation |
+|---|---|
+| **Engineering toolkit** | [ai-toolkit](https://github.com/softspark/ai-toolkit) distributes 109 skills, 44 agents, hooks, audits, and shared policies across 12 developer-tool integrations |
+| **Work management** | [jira-mcp](https://github.com/softspark/jira-mcp) connects MCP clients to multiple Jira instances with ADF formatting, caching, and comment templates |
+| **Knowledge** | Hybrid retrieval, corrective RAG, multi-hop search, reranking, evaluation sets, and knowledge-gap tracking |
+| **Model access** | [dsh-codex](https://github.com/softspark/dsh-codex) connects DeepSeek Harness to a locally authenticated Codex app server using a ChatGPT subscription |
+| **Orchestration** | [dsh-orchestrator](https://github.com/softspark/dsh-orchestrator) delegates bounded tasks to Claude Code and GitHub Copilot Gemini through native subscription logins |
+| **Control plane** | Approval gates, least-privilege tools, credential boundaries, SARIF audits, signed package provenance, human review |
 
-- **Checkout layer** — Magento 2 platform engineering for B2C and B2B commerce. Headless and PWA storefront architectures with intelligent middleware proxies.
-- **Search / Cache** — Varnish, OpenSearch, queue, and cache tuning for high-traffic stores.
-- **PIM / Data flow** — Akeneo PIM integration and data flow design.
-- **Ops coverage** — Multi-store architecture, production diagnostics, traffic-ready releases, monitoring + incident loop.
+## How We Work
 
----
+1. **Diagnose.** Inspect architecture, release flow, runtime evidence, operational risk, and the actual bottleneck.
+2. **Design.** Define ownership, interfaces, environments, migration steps, failure modes, and measurable acceptance criteria.
+3. **Codify.** Implement infrastructure, services, pipelines, policies, tests, SOPs, and runbooks.
+4. **Ship.** Release small reversible changes with automated gates, health verification, and a rollback path.
+5. **Transfer.** Leave the team with documented systems, maintainable tooling, and evidence they can reproduce.
 
-## AI Delivery — AI Orchestration
+## Typical Engagements
 
-We build internal operating systems that help technical teams move faster. Tooling, memory, agents, retrieval, and delivery rules — assembled into systems that multiply engineering output without losing control.
+- Stabilize Magento, PWA, search, cache, queue, or integration paths that affect conversion and release safety.
+- Standardize infrastructure that has grown through manual changes and undocumented dependencies.
+- Build CI/CD, observability, backup, restore, and incident procedures around an existing production platform.
+- Convert AI experiments into governed tools with retrieval, permissions, evaluation, audit trails, and human approval.
+- Create reusable engineering systems: modules, MCP servers, agent workflows, SOPs, runbooks, and knowledge bases.
 
-| Layer | Stack | Details |
-|-------|-------|---------|
-| **Toolkits** | Claude / Cursor / Windsurf / Copilot / Gemini / Cline / Roo Code / Aider | AI coding toolkits with common rules, reusable prompts, and deployment-safe workflows |
-| **Knowledge** | RAG + CRAG + multi-hop + vision | RAG-based knowledge bases with semantic search, CRAG, multi-hop reasoning, and vision support |
-| **MCP** | Jira + knowledge retrieval | MCP server integrations for Jira and knowledge retrieval |
-| **Orchestration** | Approval gates + human-in-the-loop | Agent orchestration flows with approval gates and human-in-the-loop control |
-| **SDK** | AI-assisted e-commerce ops | SDK and workflow components for AI-assisted e-commerce operations |
+## Open Source
 
----
+| Project | Purpose | Distribution | License |
+|---|---|---|---|
+| [ai-toolkit](https://github.com/softspark/ai-toolkit) | Shared skills, agents, hooks, policies, audits, and cross-tool generators | [![npm](https://img.shields.io/npm/v/@softspark/ai-toolkit?label=npm)](https://www.npmjs.com/package/@softspark/ai-toolkit) | Apache-2.0 |
+| [jira-mcp](https://github.com/softspark/jira-mcp) | Multi-instance Jira MCP server with ADF conversion and local task caching | [![npm](https://img.shields.io/npm/v/@softspark/jira-mcp?label=npm)](https://www.npmjs.com/package/@softspark/jira-mcp) | Apache-2.0 |
+| [dsh-codex](https://github.com/softspark/dsh-codex) | DeepSeek Harness provider for locally authenticated Codex app-server sessions | [![npm](https://img.shields.io/npm/v/@softspark/dsh-codex?label=npm)](https://www.npmjs.com/package/@softspark/dsh-codex) | Apache-2.0 |
+| [dsh-orchestrator](https://github.com/softspark/dsh-orchestrator) | DeepSeek Harness bundle for Claude Code and Copilot Gemini delegation | [![npm](https://img.shields.io/npm/v/@softspark/dsh-orchestrator?label=npm)](https://www.npmjs.com/package/@softspark/dsh-orchestrator) | Apache-2.0 |
 
-## Engineering Protocol — How We Work
-
-1. **Diagnose** — Audit architecture, release flow, performance risks, operational pain points, and where the team is losing speed or control.
-2. **Design** — Define the architecture, automation boundaries, environments, observability, and measurable success criteria.
-3. **Codify** — Codify infrastructure, containerize services, standardize pipelines, and document the path so the team can repeat it.
-4. **Ship** — Small reversible changes, validation-first workflows, rollback readiness, and clear operational checkpoints.
-5. **Transfer** — Monitor, tune, document, and leave behind SOPs, runbooks, and tooling that survive beyond one release window.
-
----
-
-## Working Style
-
-- **Direct and measurable** — Clear goals, clear trade-offs, clear ownership.
-- **Strategic but hands-on** — Architecture decisions backed by implementation.
-- **Three options, not one guess** — We compare paths before committing.
-- **Documentation as leverage** — If a process matters, it should be reusable.
-- **Focus on the real bottleneck** — Not the loudest symptom.
-
-### Typical Outputs
-
-| Stage | Deliverables |
-|-------|-------------|
-| **Architecture** | Target topology, migration plan, dependency map, risk list |
-| **Implementation** | Terraform modules, Ansible automation, Docker images, CI/CD changes |
-| **Validation** | Syntax checks, deployment verification, rollback path, health checks |
-| **Operations** | Monitoring, alerting, runbooks, cost and performance improvements |
-| **Enablement** | SOPs, KB articles, AI assistant workflows, team-specific tooling |
-
----
+Every public module starts at `1.0.0`, ships with Apache-2.0 and `NOTICE`, and uses automated supply-chain verification appropriate to its distribution channel.
 
 ## Selected Building Blocks
 
@@ -106,26 +91,19 @@ We build internal operating systems that help technical teams move faster. Tooli
 ![Terraform](https://img.shields.io/badge/Terraform-7B42BC?style=for-the-badge&logo=terraform&logoColor=white)
 ![Ansible](https://img.shields.io/badge/Ansible-EE0000?style=for-the-badge&logo=ansible&logoColor=white)
 ![AWS](https://img.shields.io/badge/AWS-232F3E?style=for-the-badge&logo=amazonwebservices&logoColor=white)
+![Azure](https://img.shields.io/badge/Azure-0078D4?style=for-the-badge&logo=microsoftazure&logoColor=white)
 ![Hetzner](https://img.shields.io/badge/Hetzner-D50C2D?style=for-the-badge&logo=hetzner&logoColor=white)
+![Magento](https://img.shields.io/badge/Magento-EE672F?style=for-the-badge&logo=magento&logoColor=white)
 ![PHP](https://img.shields.io/badge/PHP-777BB4?style=for-the-badge&logo=php&logoColor=white)
 ![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white)
 ![Node.js](https://img.shields.io/badge/Node.js-5FA04E?style=for-the-badge&logo=nodedotjs&logoColor=white)
 ![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?style=for-the-badge&logo=typescript&logoColor=white)
-![Magento](https://img.shields.io/badge/Magento-EE672F?style=for-the-badge&logo=magento&logoColor=white)
 ![PostgreSQL](https://img.shields.io/badge/PostgreSQL-4169E1?style=for-the-badge&logo=postgresql&logoColor=white)
-![GitLab CI](https://img.shields.io/badge/GitLab_CI-FC6D26?style=for-the-badge&logo=gitlab&logoColor=white)
 
----
+## Contact
 
-## Open Source
-
-| Repository | Description | License | Status |
-|------------|-------------|---------|--------|
-| [ai-toolkit](https://github.com/softspark/ai-toolkit) | Claude Code toolkit — skills, agents, hooks, and knowledge base integration | Apache-2.0 | **PUBLIC** |
-| [jira-mcp](https://github.com/softspark/jira-mcp) | MCP server for Jira integration — multi-instance, caching, bulk operations | Apache-2.0 | **PUBLIC** |
-
----
+Architecture review, commerce stabilization, infrastructure automation, or AI delivery system:
 
 [softspark.eu](https://softspark.eu) · [biuro@softspark.eu](mailto:biuro@softspark.eu)
 
-This profile is licensed under [Apache-2.0](LICENSE); see [NOTICE](NOTICE). Linked repositories carry their own licences.
+This profile is licensed under [Apache-2.0](LICENSE). See [NOTICE](NOTICE). Linked repositories carry their own licenses.
