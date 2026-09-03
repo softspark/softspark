@@ -82,6 +82,8 @@ We treat AI as an engineering system, not a chat window. Rules, permissions, ret
 | [jira-mcp](https://github.com/softspark/jira-mcp) | Multi-instance Jira MCP server with ADF conversion and local task caching | [![npm](https://img.shields.io/npm/v/@softspark/jira-mcp?label=npm)](https://www.npmjs.com/package/@softspark/jira-mcp) | Apache-2.0 |
 | [dsh-codex](https://github.com/softspark/dsh-codex) | DeepSeek Harness provider for locally authenticated Codex app-server sessions | [![npm](https://img.shields.io/npm/v/@softspark/dsh-codex?label=npm)](https://www.npmjs.com/package/@softspark/dsh-codex) | Apache-2.0 |
 | [dsh-orchestrator](https://github.com/softspark/dsh-orchestrator) | DeepSeek Harness bundle for Claude Code and Copilot Gemini delegation | [![npm](https://img.shields.io/npm/v/@softspark/dsh-orchestrator?label=npm)](https://www.npmjs.com/package/@softspark/dsh-orchestrator) | Apache-2.0 |
+| [gitspace](https://github.com/softspark/gitspace) | Git identity, GitHub account, SSH key, signing, and audit controls bound to workspace directories | [![npm](https://img.shields.io/npm/v/@softspark/gitspace?label=npm)](https://www.npmjs.com/package/@softspark/gitspace) | Apache-2.0 |
+| [mage2x](https://github.com/softspark/mage2x) | Magento and shell command runner for Docker, Podman, and Kubernetes with target and production safeguards | [![npm](https://img.shields.io/npm/v/@softspark/mage2x?label=npm)](https://www.npmjs.com/package/@softspark/mage2x) | Apache-2.0 |
 
 Every public module starts at `1.0.0`, ships with Apache-2.0 and `NOTICE`, and uses automated supply-chain verification appropriate to its distribution channel.
 
